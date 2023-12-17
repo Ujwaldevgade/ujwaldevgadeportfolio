@@ -1,0 +1,45 @@
+/* src/components/Certifications.css */
+
+.certifications-container {
+    text-align: center;
+  }
+  
+  .certification-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .certification-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    width: 200px; /* Set the width of the certification boxes */
+    box-sizing: border-box; /* Include padding and border in the box size */
+  }
+  
+  .certification-item:hover {
+    transform: scale(1.05);
+    border-color: skyblue;
+  }
+  
+  .certification-item.selected {
+    background-color: #f0f0f0;
+  }
+  
+  .certification-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .certification-details p {
+    margin: 0;
+  }
+  

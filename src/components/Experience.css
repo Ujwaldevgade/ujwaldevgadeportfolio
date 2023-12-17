@@ -1,0 +1,59 @@
+/* src/components/Experience.css */
+
+.experience-container {
+  padding: 20px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  width: 55%; /* Set the width of the image container as needed */
+  height: 65%; /* Set the height of the image container as needed */
+  margin-right: 20px;
+}
+
+.experience-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.internship-container {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(146, 214, 241);
+}
+
+.internship-container:hover {
+  background-color: #f0f0f0;
+}
+
+.internship-details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}

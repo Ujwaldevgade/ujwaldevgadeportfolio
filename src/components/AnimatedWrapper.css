@@ -1,0 +1,32 @@
+/* src/components/AnimatedWrapper.css */
+
+/* Add the following CSS for the fade-in animation */
+.animated-container.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  /* src/components/AnimatedWrapper.css */
+
+/* Add the following CSS for the fade-in and move-in animations */
+.animated-container {
+    opacity: 0;
+  }
+  
+  .animated-container.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .move-in {
+    animation: moveInAnimation 1s ease-in-out;
+  }
+  
+  @keyframes moveInAnimation {
+    from {
+      transform: translateX(-12%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  

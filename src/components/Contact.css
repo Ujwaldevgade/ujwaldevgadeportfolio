@@ -1,0 +1,111 @@
+/* src/components/Contact.css */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-right: 5%; /* Adjust the padding as needed */
+  padding-left: 3%;
+  display: block;
+}
+
+.profile-container {
+  width: 22%;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #fff; /* White border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+  margin-right: 20px; /* Adjust the margin to move the profile image away from the text */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3%; /* Rounded corners for a circular image */
+}
+
+.top-section {
+  display: flex;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  flex: 1;
+  padding-right: 12%;
+}
+
+.resume-button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  background-color: #001f3f;
+  width: 18%;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none; /* Remove the underline */
+  padding: 10px 20px; /* Adjust padding for a better look */
+  border: 2px solid #001f3f; /* Add border for a button-like appearance */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.resume-button:hover {
+  background-color: #fff;
+  color: #001f3f;
+  transition: 0.3s; /* Add a smooth transition effect on hover */
+}
+
+.bottom-image {
+  width: 50%;
+  margin-top: 20px;
+  padding-right: 3%;
+}
+
+/* New styles for the business inquiries section */
+.contact-me-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-me-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-me-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.email-button {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  background-color: #001f3f;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline */
+  border: 2px solid #001f3f; /* Add border for a button-like appearance */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.email-button:hover {
+  background-color: #fff;
+  color: #001f3f;
+  transition: 0.3s; /* Add a smooth transition effect on hover */
+}
+
+/* Add this to your CSS */
+.bottom-section {
+  display: flex;
+}
+

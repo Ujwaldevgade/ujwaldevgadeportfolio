@@ -1,0 +1,115 @@
+/* src/components/Projects.css */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+}
+
+.image-container {
+  flex: 1;
+}
+
+.projects-content {
+  flex: 2;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.project-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: rgb(167, 227, 251);
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.more-projects-button {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  background-color: #001f3f;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline */
+  border: 2px solid #001f3f; /* Add border for a button-like appearance */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  margin: 20px auto; /* Center the button horizontally and vertically */
+  width: 9%;
+  align-items: center;
+}
+
+.more-projects-button:hover {
+  background-color: #fff;
+  color: #001f3f;
+  transition: 0.3s; /* Add a smooth transition effect on hover */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 100%;
+  }
+
+  .more-projects-button {
+    width: 100%; /* Change the width for full width on small screens */
+    width: 23%;
+  }
+
+  .projects-header {
+    flex-direction: column; /* Stack image-container and experience-title vertically on small screens */
+    align-items: center;
+  }
+
+  .image-container {
+    order: 1; /* Change the order to place image-container on top */
+    margin-bottom: 20px; /* Add margin for spacing on small screens */
+  }
+
+  .experience-title {
+    order: 2; /* Change the order to place experience-title below image-container */
+  }
+}
+/* Add this to your existing CSS */
+.project-details a {
+  display: inline-block;
+  background-color: #001f3f;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #001f3f;
+  border-radius: 5px;
+  margin-top: 10px; /* Adjust the margin as needed */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.project-details a:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+

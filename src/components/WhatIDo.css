@@ -1,0 +1,75 @@
+/* src/components/WhatIDo.css */
+
+.what-i-do-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex-shrink: 0;
+  width: 115%; /* Full width for small screens */
+  margin-bottom: -80px; /* Adjust the margin as needed */
+
+}
+
+.left-section img {
+  width: 100%;
+  height: auto;
+}
+
+.right-section {
+  width: 100%; /* Full width for small screens */
+}
+
+.right-section h2 {
+  /* Add styles for the h2 element */
+}
+
+.right-section .tech-icons {
+  /* Add styles for the tech-icons */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.right-section .tech-icons li {
+  /* Add styles for the tech-icons li element */
+  display: flex;
+  align-items: center;
+}
+
+.right-section p {
+  /* Add styles for the p element */
+}
+
+.right-section ul {
+  /* Add styles for the ul element */
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-section li {
+  /* Add styles for the li element */
+  margin-bottom: 10px;
+}
+
+.tech-icons svg {
+  transition: transform 0.3s ease, background-color 1s ease;
+}
+
+.tech-icons svg:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+/* Media query for small screens */
+@media (min-width: 768px) {
+  .left-section {
+    width: 48%; /* Adjust the width as needed for larger screens */
+  }
+
+  .right-section {
+    width: 48%; /* Adjust the width as needed for larger screens */
+  }
+}

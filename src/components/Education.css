@@ -1,0 +1,96 @@
+/* src/components/Education.css */
+
+/* ... existing styles ... */
+
+.education-container {
+  padding: 20px;
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.image-container {
+  width: 55%; /* Set the width of the image container as needed */
+  height: 65%; /* Set the height of the image container as needed */
+  margin-right: 20px;
+}
+
+.education-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */ 
+}
+
+.education-container {
+  margin-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.education-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: rgb(167, 227, 251);
+}
+
+.education-item.selected {
+  background-color: #f0f0f0;
+}
+
+.education-item h2 {
+  margin-bottom: 5px;
+}
+
+.details {
+  display: none;
+}
+
+.university {
+  font-weight: bold;
+}
+
+.duration {
+  color: #555;
+}
+
+.percentage {
+  color: #007bff;
+}
+
+/* Show details when item is selected */
+.education-item.selected .details {
+  display: block;
+}
+
+.full-form {
+  font-size: 14px;
+  color: #555;
+}
+
+.details .full-form {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #000; /* Dark black color */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .education-title {
+    text-align: center;
+  }
+}

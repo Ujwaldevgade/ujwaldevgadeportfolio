@@ -1,0 +1,54 @@
+.App-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+  padding-top: 3%;
+  padding-right: 3%;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.nav-link.active-link {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgb(9, 10, 10);
+  color: white
+}
+
+.active-link {
+  background-color: #555;
+}
+
+.nav-logo {
+  width: 185px; /* Adjust the width as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+  margin-bottom: 1%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .App-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}
